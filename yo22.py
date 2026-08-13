@@ -11,8 +11,13 @@ def abrir_toplevel_nacimi():
     toplevel_naci = Toplevel()
     toplevel_naci.title("info de donde naci")
     toplevel_naci.resizable(False, False)
-    toplevel_naci.geometry("700x900")
+    toplevel_naci.geometry("700x500")
     toplevel_naci.config(bg="#7C9A99")
+
+# logo de la app
+    lb_logo2 = Label(toplevel_naci, image=logo, bg="white")
+    lb_logo2.place(x=0,y=200)
+
 
    # etiqueta de nacimiento
     lb_d = Label(toplevel_naci, text = "San Gil es un municipio colombiano ")   
@@ -34,10 +39,10 @@ def abrir_toplevel_nacimi():
     lb_d = Label(toplevel_naci, text = "naci el 16 de julio de 2011")
     lb_d.config(bg="#7C9A99", fg="black", font=("Helvetica", 18))
     lb_d.place(x=0, y=200)
-   
-   
 
-# abrir datos medi
+
+
+   # abrir datos medi
 def abrir_toplevel_medicos():
     global toplevel_medi
     toplevel_medi = Toplevel()
@@ -63,6 +68,9 @@ def abrir_toplevel_medicos():
     lb_d.config(bg="#99B7CB", fg="black", font=("Helvetica", 18))
     lb_d.place(x=0, y=150)
 
+    lb_d = Label(toplevel_medi, text = "soy tipo de sangre o+")
+    lb_d.config(bg="#99B7CB", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=180)
    
   # abrir famili
 def abrir_toplevel_familia():
@@ -72,6 +80,10 @@ def abrir_toplevel_familia():
     toplevel_famili.resizable(False, False)
     toplevel_famili.geometry("700x900")
     toplevel_famili.config(bg="#73C9F1")
+
+    # logo de la app
+    lb_logo2 = Label(toplevel_famili, image=famili, bg="white")
+    lb_logo2.place(x=0,y=400)
 
 # etiqueta para valor en centigrados
     lb_c = Label(toplevel_famili, text = "tengo 1 hermano que se graduo del guanenta")   
@@ -119,6 +131,11 @@ def abrir_toplevel_educativo():
     toplevel_edu.geometry("720x900")
     toplevel_edu.config(bg="#ADCCB8")
 
+# logo de la app
+    lb_logo2 = Label(toplevel_edu, image=edu, bg="white")
+    lb_logo2.place(x=0,y=400)
+
+
     # etiqueta para valor en centigrados
     lb_c = Label(toplevel_edu, text = "en la educasion me va muy bien porque llevo un buen promedio")   
     lb_c.config(bg="#ABCCB8", fg="black", font=("Helvetica", 18))
@@ -145,6 +162,11 @@ def abrir_toplevel_amigos():
     toplevel_ami.geometry("700x900")
     toplevel_ami.config(bg="#D3A896")
 
+    # logo de la app
+    lb_logo2 = Label(toplevel_ami, image=amigos, bg="white")
+    lb_logo2.place(x=0,y=200)
+
+
     lb_c = Label(toplevel_ami, text = "tengo muchos amigos y tengo 2 que son mejores amigos")   
     lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=40)
@@ -156,6 +178,10 @@ def abrir_toplevel_amigos():
     lb_c = Label(toplevel_ami, text = "yeiber es de 10-4 y julian es de 10-5")   
     lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=120)
+
+    lb_c = Label(toplevel_ami, text = "")   
+    lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=160)
 
 # abrir hobbies
 def abrir_toplevel_hobbies():
@@ -175,6 +201,18 @@ def abrir_toplevel_horario():
     toplevel_libres.geometry("700x900")
     toplevel_libres.config(bg="#8DA49B")
 
+    lb_c = Label(toplevel_libres, text = "en mi orario de clase de lunes a viernes tengo clases 12:30 a 6:30")   
+    lb_c.config(bg="#8DA49B", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=20)
+
+    lb_c = Label(toplevel_libres, text = "el sabado tengo clase de ingles de 9:00 a 12:00")   
+    lb_c.config(bg="#8DA49B", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=60)
+ 
+    lb_c = Label(toplevel_libres, text = "el domingo no hago nada solo descansar y jugar videojuegos")   
+    lb_c.config(bg="#8DA49B", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=100)
+
     # abrir 2026
 def abrir_toplevel_pruevas():
     global toplevel_2026
@@ -183,6 +221,10 @@ def abrir_toplevel_pruevas():
     toplevel_2026.resizable(False, False)
     toplevel_2026.geometry("700x900")
     toplevel_2026.config(bg="#CBB843")
+
+    lb_c = Label(toplevel_2026, text = "estudiar")   
+    lb_c.config(bg="#CBB843", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=20)
 
     # abrir proyect
 def abrir_toplevel_proyecto():
@@ -231,49 +273,69 @@ frame_entrada.config(bg="#7C9A99")
 frame_entrada.place(x=0, y=0, width=900, height=900)
 
 # logo de la app
-logo = PhotoImage(file="img/hola.png")
+logo = PhotoImage(file="img/a.png")
 lb_logo = Label(frame_entrada, image=logo, bg="white")
-lb_logo.place(x=20,y=0)
+lb_logo.place(x=20,y=170)
+
+# logo de la app
+amigos = PhotoImage(file="img/hello.png")
+lb_amigos = Label(frame_entrada, image=amigos, bg="white")
+lb_amigos.place(x=700,y=170)
+
+# logo de la app
+amigos = PhotoImage(file="img/hello.png")
+lb_amigos = Label(frame_entrada, image=amigos, bg="white")
+lb_amigos.place(x=700,y=170)
+
+# logo de la app
+famili = PhotoImage(file="img/famili.png")
+lb_famili = Label(frame_entrada, image=famili, bg="white")
+lb_famili.place(x=380,y=170)
+
+# logo de la app
+edu = PhotoImage(file="img/edu.png")
+lb_edu = Label(frame_entrada, image=edu, bg="white")
+lb_edu.place(x=550,y=170)
 
 # boton para abrir Toplevel para nacimiento
 bt_rty = Button(frame_entrada, text="nacimiento", command=abrir_toplevel_nacimi,)
-bt_rty.place(x=20, y=154)
+bt_rty.place(x=20, y=154, width=115)
 
 # boton para abrir Toplevel para datos medicos
 bt_centigrados = Button(frame_entrada, text="datos medicos", command=abrir_toplevel_medicos)
-bt_centigrados.place(x=190, y=154)
+bt_centigrados.place(x=190, y=154, width=115)
 
 # boton para abrir Toplevel para familia
 bt_centigrados = Button(frame_entrada, text="familia", command=abrir_toplevel_familia)
-bt_centigrados.place(x=380, y=150)
+bt_centigrados.place(x=380, y=150, width=115)
 
 # boton para abrir Toplevel para edu
 bt_centigrados = Button(frame_entrada, text="edu", command=abrir_toplevel_educativo)
-bt_centigrados.place(x=550, y=150)
+bt_centigrados.place(x=550, y=150, width=115)
 
 # boton para abrir Toplevel para amigos
 bt_centigrados = Button(frame_entrada, text="amigos", command=abrir_toplevel_amigos)
-bt_centigrados.place(x=700, y=150)
+bt_centigrados.place(x=700, y=150, width=115)
 
 # boton para abrir Toplevel para habbies
 bt_centigrados = Button(frame_entrada, text="habbies", command=abrir_toplevel_hobbies)
-bt_centigrados.place(x=20, y=600)
+bt_centigrados.place(x=20, y=600, width=115)
 
 # boton para abrir Toplevel para horario
 bt_centigrados = Button(frame_entrada, text="horario", command=abrir_toplevel_horario)
-bt_centigrados.place(x=190, y=600)
+bt_centigrados.place(x=190, y=600, width=115)
 
 # boton para abrir Toplevel para pruevas
 bt_centigrados = Button(frame_entrada, text="pruevas", command=abrir_toplevel_pruevas)
-bt_centigrados.place(x=380, y=600)
+bt_centigrados.place(x=380, y=600, width=115)
 
 # boton para abrir Toplevel para proyecto
 bt_centigrados = Button(frame_entrada, text="proyecto", command=abrir_toplevel_proyecto)
-bt_centigrados.place(x=550, y=600)
+bt_centigrados.place(x=550, y=600, width=115)
 
 # boton para abrir Toplevel para libre
 bt_centigrados = Button(frame_entrada, text="libre", command=abrir_toplevel_libre)
-bt_centigrados.place(x=700, y=600)
+bt_centigrados.place(x=700, y=600, width=115)
 
 # se ejecuta el metodo mainloop() de la clase Tk() a través de la instancia ventana_principal. Este metodo despliega la ventana en pantalla y queda a la espera de lo que el usuario haga (click en un boton, escribir, etc).  Cada acción del usuario se conoce como un evento.  El método mainloop() es un bucle infinito.
 ventana_principal.mainloop()
