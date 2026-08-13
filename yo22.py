@@ -3,33 +3,206 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
 
-# abrir toplevel centigrados
-def abrir_toplevel_centigrados():
-    global toplevel_centigrados
-    toplevel_centigrados = Toplevel()
-    toplevel_centigrados.title("info de donde naci")
-    toplevel_centigrados.resizable(False, False)
-    toplevel_centigrados.geometry("500x500")
-    toplevel_centigrados.config(bg="#7C9A99")
+    
 
-   # etiqueta para valor en centigrados
-    lb_c = Label(toplevel_centigrados, text = "San Gil es un municipio colombiano ")   
-    lb_c.config(bg="#7C9A99", fg="black", font=("Helvetica", 18))
-    lb_c.place(x=0, y=60)
+# abrir imfo de donde naci
+def abrir_toplevel_nacimi():
+    global toplevel_naci
+    toplevel_naci = Toplevel()
+    toplevel_naci.title("info de donde naci")
+    toplevel_naci.resizable(False, False)
+    toplevel_naci.geometry("700x900")
+    toplevel_naci.config(bg="#7C9A99")
 
-    lb_d = Label(toplevel_centigrados, text = "en el departamento de Santander")
+   # etiqueta de nacimiento
+    lb_d = Label(toplevel_naci, text = "San Gil es un municipio colombiano ")   
+    lb_d.config(bg="#7C9A99", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=60)
+   
+    lb_d = Label(toplevel_naci, text = "en el departamento de Santander")
     lb_d.config(bg="#7C9A99", fg="black", font=("Helvetica", 18))
     lb_d.place(x=0, y=90)
-
-    lb_e = Label(toplevel_centigrados, text = "conocido oficialmente como la Capital Turística")
-    lb_e.config(bg="#7C9A99", fg="black", font=("Helvetica", 18))
-    lb_e.place(x=0, y=120)
-
-    lb_d = Label(toplevel_centigrados, text = "de la región y la capital nacional de los deportes de aventura")
+   
+    lb_d = Label(toplevel_naci, text = "conocido oficialmente como la Capital Turística")
+    lb_d.config(bg="#7C9A99", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=120)
+   
+    lb_d = Label(toplevel_naci, text = "de la región y la capital nacional de los deportes de aventura")
     lb_d.config(bg="#7C9A99", fg="black", font=("Helvetica", 18))
     lb_d.place(x=0, y=150)
+   
+    lb_d = Label(toplevel_naci, text = "naci el 16 de julio de 2011")
+    lb_d.config(bg="#7C9A99", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=200)
+   
+   
 
+# abrir datos medi
+def abrir_toplevel_medicos():
+    global toplevel_medi
+    toplevel_medi = Toplevel()
+    toplevel_medi.title("datos medicos")
+    toplevel_medi.resizable(False, False)
+    toplevel_medi.geometry("700x500")
+    toplevel_medi.config(bg="#99B7CB")
 
+    # etiqueta para datos medicos
+    lb_c = Label(toplevel_medi, text = "tube apendisites el año pasado")   
+    lb_c.config(bg="#99B7CB", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=60)
+    
+    lb_d = Label(toplevel_medi, text = "me operaron y me toco quedarme en casa durante 2 meses")
+    lb_d.config(bg="#99B7CB", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=90)
+    
+    lb_e = Label(toplevel_medi, text = "cuandom naci tube un desplasamienjto de cadera")
+    lb_e.config(bg="#99B7CB", fg="black", font=("Helvetica", 18))
+    lb_e.place(x=0, y=120)
+
+    lb_d = Label(toplevel_medi, text = "pero ya estoy bien :)")
+    lb_d.config(bg="#99B7CB", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=150)
+
+   
+  # abrir famili
+def abrir_toplevel_familia():
+    global toplevel_famili
+    toplevel_famili = Toplevel()
+    toplevel_famili.title("familia")
+    toplevel_famili.resizable(False, False)
+    toplevel_famili.geometry("700x900")
+    toplevel_famili.config(bg="#73C9F1")
+
+# etiqueta para valor en centigrados
+    lb_c = Label(toplevel_famili, text = "tengo 1 hermano que se graduo del guanenta")   
+    lb_c.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=40)
+    
+    lb_d = Label(toplevel_famili, text = "escojio la especialidad que escojio electrponica")
+    lb_d.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=80)
+    
+    lb_e = Label(toplevel_famili, text = "esta estudiando en la uni de bucaramanga ingieneria electronica")
+    lb_e.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_e.place(x=0, y=120)
+    
+    lb_d = Label(toplevel_famili, text = "esta en el trabajo de grado para graduarsde de la uni")
+    lb_d.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=160) 
+
+    lb_d = Label(toplevel_famili, text = "mi hermano ya tiene 24 años")
+    lb_d.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=200)
+
+    lb_d = Label(toplevel_famili, text = "mi mamá nos quiere mucho y trabaja en una tienda")
+    lb_d.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=240)
+
+    lb_d = Label(toplevel_famili, text = "mi papá nos quiere mucho a mi hermano y a mi")
+    lb_d.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=280)
+
+    lb_d = Label(toplevel_famili, text = "siempre dise que aprendamos ingles para conseguir ")
+    lb_d.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=320)
+
+    lb_d = Label(toplevel_famili, text = "un trabajo bonito por aprender ingles")
+    lb_d.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
+    lb_d.place(x=0, y=370)
+
+# abrir edu
+def abrir_toplevel_educativo():
+    global toplevel_edu
+    toplevel_edu = Toplevel()
+    toplevel_edu.title("proseso educativo")
+    toplevel_edu.resizable(False, False)
+    toplevel_edu.geometry("720x900")
+    toplevel_edu.config(bg="#ADCCB8")
+
+    # etiqueta para valor en centigrados
+    lb_c = Label(toplevel_edu, text = "en la educasion me va muy bien porque llevo un buen promedio")   
+    lb_c.config(bg="#ABCCB8", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=40)
+
+    lb_c = Label(toplevel_edu, text = "y en la primaria nunca repeti ningun año")   
+    lb_c.config(bg="#ABCCB8", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=80)
+
+    lb_c = Label(toplevel_edu, text = "en el guanenta he perdido materias pero he logrado pasador el año")   
+    lb_c.config(bg="#ABCCB8", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=120)
+
+    lb_c = Label(toplevel_edu, text = "sin importar que alla perdido algunas materias pero las he recuperar")   
+    lb_c.config(bg="#ABCCB8", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=160)
+
+    # abrir ami
+def abrir_toplevel_amigos():
+    global toplevel_ami
+    toplevel_ami = Toplevel()
+    toplevel_ami.title("amigos")
+    toplevel_ami.resizable(False, False)
+    toplevel_ami.geometry("700x900")
+    toplevel_ami.config(bg="#D3A896")
+
+    lb_c = Label(toplevel_ami, text = "tengo muchos amigos y tengo 2 que son mejores amigos")   
+    lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=40)
+
+    lb_c = Label(toplevel_ami, text = "mis 2 mejores amigos se llaman yeiber y julian")   
+    lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=80)
+
+    lb_c = Label(toplevel_ami, text = "yeiber es de 10-4 y julian es de 10-5")   
+    lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=120)
+
+# abrir hobbies
+def abrir_toplevel_hobbies():
+    global toplevel_hobbi
+    toplevel_habbi = Toplevel()
+    toplevel_habbi.title("hobbies")
+    toplevel_hobbi.resizable(False, False)
+    toplevel_hobbi.geometry("700x900")
+    toplevel_hobbi.config(bg="#CF9FB5")
+
+    # abrir libres
+def abrir_toplevel_horario():
+    global toplevel_libres
+    toplevel_libres = Toplevel()
+    toplevel_libres.title("horario")
+    toplevel_libres.resizable(False, False)
+    toplevel_libres.geometry("700x900")
+    toplevel_libres.config(bg="#8DA49B")
+
+    # abrir 2026
+def abrir_toplevel_pruevas():
+    global toplevel_2026
+    toplevel_2026 = Toplevel()
+    toplevel_2026.title("pruevas")
+    toplevel_2026.resizable(False, False)
+    toplevel_2026.geometry("700x900")
+    toplevel_2026.config(bg="#CBB843")
+
+    # abrir proyect
+def abrir_toplevel_proyecto():
+    global toplevel_proyect
+    toplevel_proyect = Toplevel()
+    toplevel_proyect.title("proyecto")
+    toplevel_proyect.resizable(False, False)
+    toplevel_proyect.geometry("700x900")
+    toplevel_proyect.config(bg="#B5B898")
+
+    # abrir hola
+def abrir_toplevel_libre():
+    global toplevel_hola
+    toplevel_hola = Toplevel()
+    toplevel_hola.title("libre")
+    toplevel_hola.resizable(False, False)
+    toplevel_hola.geometry("700x900")
+    toplevel_hola.config(bg="#C6CB65")
+
+    
 
 #-----------------------------
 # ventana principal de la app
@@ -42,7 +215,7 @@ ventana_principal = Tk()
 ventana_principal.title("yo33")
 
 # tamaño de la ventana
-ventana_principal.geometry("500x1000")
+ventana_principal.geometry("900x900")
 
 # deshabilitar boton de maximizar
 ventana_principal.resizable(False, False)
@@ -55,13 +228,52 @@ ventana_principal.config(bg="#7C9A99")
 #--------------------------------
 frame_entrada = Frame(ventana_principal)
 frame_entrada.config(bg="#7C9A99")
-frame_entrada.place(x=0, y=0, width=500, height=200)
+frame_entrada.place(x=0, y=0, width=900, height=900)
+
+# logo de la app
+logo = PhotoImage(file="img/hola.png")
+lb_logo = Label(frame_entrada, image=logo, bg="white")
+lb_logo.place(x=20,y=0)
 
 # boton para abrir Toplevel para nacimiento
-bt_centigrados = Button(frame_entrada, text="nacimiento", command=abrir_toplevel_centigrados)
-bt_centigrados.place(x=100, y=100)
+bt_rty = Button(frame_entrada, text="nacimiento", command=abrir_toplevel_nacimi,)
+bt_rty.place(x=20, y=154)
 
+# boton para abrir Toplevel para datos medicos
+bt_centigrados = Button(frame_entrada, text="datos medicos", command=abrir_toplevel_medicos)
+bt_centigrados.place(x=190, y=154)
 
+# boton para abrir Toplevel para familia
+bt_centigrados = Button(frame_entrada, text="familia", command=abrir_toplevel_familia)
+bt_centigrados.place(x=380, y=150)
+
+# boton para abrir Toplevel para edu
+bt_centigrados = Button(frame_entrada, text="edu", command=abrir_toplevel_educativo)
+bt_centigrados.place(x=550, y=150)
+
+# boton para abrir Toplevel para amigos
+bt_centigrados = Button(frame_entrada, text="amigos", command=abrir_toplevel_amigos)
+bt_centigrados.place(x=700, y=150)
+
+# boton para abrir Toplevel para habbies
+bt_centigrados = Button(frame_entrada, text="habbies", command=abrir_toplevel_hobbies)
+bt_centigrados.place(x=20, y=600)
+
+# boton para abrir Toplevel para horario
+bt_centigrados = Button(frame_entrada, text="horario", command=abrir_toplevel_horario)
+bt_centigrados.place(x=190, y=600)
+
+# boton para abrir Toplevel para pruevas
+bt_centigrados = Button(frame_entrada, text="pruevas", command=abrir_toplevel_pruevas)
+bt_centigrados.place(x=380, y=600)
+
+# boton para abrir Toplevel para proyecto
+bt_centigrados = Button(frame_entrada, text="proyecto", command=abrir_toplevel_proyecto)
+bt_centigrados.place(x=550, y=600)
+
+# boton para abrir Toplevel para libre
+bt_centigrados = Button(frame_entrada, text="libre", command=abrir_toplevel_libre)
+bt_centigrados.place(x=700, y=600)
 
 # se ejecuta el metodo mainloop() de la clase Tk() a través de la instancia ventana_principal. Este metodo despliega la ventana en pantalla y queda a la espera de lo que el usuario haga (click en un boton, escribir, etc).  Cada acción del usuario se conoce como un evento.  El método mainloop() es un bucle infinito.
 ventana_principal.mainloop()
