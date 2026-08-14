@@ -82,7 +82,7 @@ def abrir_toplevel_familia():
     toplevel_famili = Toplevel()
     toplevel_famili.title("familia")
     toplevel_famili.resizable(False, False)
-    toplevel_famili.geometry("700x900")
+    toplevel_famili.geometry("700x750")
     toplevel_famili.config(bg="#73C9F1")
 
     # logo de la app
@@ -132,12 +132,12 @@ def abrir_toplevel_educativo():
     toplevel_edu = Toplevel()
     toplevel_edu.title("proseso educativo")
     toplevel_edu.resizable(False, False)
-    toplevel_edu.geometry("720x900")
+    toplevel_edu.geometry("720x500")
     toplevel_edu.config(bg="#ADCCB8")
 
 # logo de la app
     lb_logo2 = Label(toplevel_edu, image=edu, bg="white")
-    lb_logo2.place(x=0,y=400)
+    lb_logo2.place(x=0,y=200)
 
 
     # etiqueta para valor en centigrados
@@ -163,7 +163,7 @@ def abrir_toplevel_amigos():
     toplevel_ami = Toplevel()
     toplevel_ami.title("amigos")
     toplevel_ami.resizable(False, False)
-    toplevel_ami.geometry("700x900")
+    toplevel_ami.geometry("700x500")
     toplevel_ami.config(bg="#D3A896")
 
     # logo de la app
@@ -183,18 +183,39 @@ def abrir_toplevel_amigos():
     lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=120)
 
-    lb_c = Label(toplevel_ami, text = "")   
+    lb_c = Label(toplevel_ami, text = "a yeiber lo conosco desde la guarderia")   
     lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=160)
+
+    lb_c = Label(toplevel_ami, text = "a julian lo conosco desde 4 de primaria")   
+    lb_c.config(bg="#D3A896", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=200)
 
 # abrir hobbies
 def abrir_toplevel_hobbies():
     global toplevel_hobbi
-    toplevel_habbi = Toplevel()
-    toplevel_habbi.title("hobbies")
+    toplevel_hobbi = Toplevel()
+    toplevel_hobbi.title("hobbies")
     toplevel_hobbi.resizable(False, False)
-    toplevel_hobbi.geometry("700x900")
+    toplevel_hobbi.geometry("700x500")
     toplevel_hobbi.config(bg="#CF9FB5")
+
+    # logo de la app
+    lb_logo2 = Label(toplevel_hobbi, image=hobbi, bg="white")
+    lb_logo2.place(x=0,y=150)
+
+    lb_c = Label(toplevel_hobbi, text = "mis hobbies son jugar videojuegos jugar futbol con mis amigos ")   
+    lb_c.config(bg="#CF9FB5", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=20)
+
+    lb_c = Label(toplevel_hobbi, text = "y juagr balonsesto con mis amigos y con mi hermmano")   
+    lb_c.config(bg="#CF9FB5", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=60)
+
+    lb_c = Label(toplevel_hobbi, text = "hacer ejercicio")   
+    lb_c.config(bg="#CF9FB5", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=100)
+    
 
     # abrir libres
 def abrir_toplevel_horario():
@@ -202,12 +223,12 @@ def abrir_toplevel_horario():
     toplevel_libres = Toplevel()
     toplevel_libres.title("horario")
     toplevel_libres.resizable(False, False)
-    toplevel_libres.geometry("700x900")
+    toplevel_libres.geometry("700x500")
     toplevel_libres.config(bg="#8DA49B")
 
     # logo de la app
     lb_logo2 = Label(toplevel_libres, image=libre, bg="white")
-    lb_logo2.place(x=0,y=200)
+    lb_logo2.place(x=0,y=150)
 
     lb_c = Label(toplevel_libres, text = "en mi orario de clase de lunes a viernes tengo clases 12:30 a 6:30")   
     lb_c.config(bg="#8DA49B", fg="black", font=("Helvetica", 18))
@@ -227,16 +248,20 @@ def abrir_toplevel_pruevas():
     toplevel_2026 = Toplevel()
     toplevel_2026.title("pruevas")
     toplevel_2026.resizable(False, False)
-    toplevel_2026.geometry("700x900")
+    toplevel_2026.geometry("700x500")
     toplevel_2026.config(bg="#CBB843")
 
     # logo de la app
     lb_logo2 = Label(toplevel_2026, image=prueva, bg="white")
-    lb_logo2.place(x=0,y=200)
+    lb_logo2.place(x=0,y=150)
 
-    lb_c = Label(toplevel_2026, text = "estudiar")   
+    lb_c = Label(toplevel_2026, text = "estudiar para aprender para sacar muy buenas notas")   
     lb_c.config(bg="#CBB843", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=20)
+
+    lb_c = Label(toplevel_2026, text = "y pasar el año para 11")   
+    lb_c.config(bg="#CBB843", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=60)
 
     # abrir proyect
 def abrir_toplevel_proyecto():
@@ -244,12 +269,12 @@ def abrir_toplevel_proyecto():
     toplevel_proyect = Toplevel()
     toplevel_proyect.title("proyecto")
     toplevel_proyect.resizable(False, False)
-    toplevel_proyect.geometry("700x900")
+    toplevel_proyect.geometry("700x500")
     toplevel_proyect.config(bg="#B5B898")
 
 # logo de la app
     lb_logo2 = Label(toplevel_proyect, image=proyecto, bg="white")
-    lb_logo2.place(x=0,y=200)
+    lb_logo2.place(x=0,y=150)
 
     lb_c = Label(toplevel_proyect, text = "para el 2031 yo pienso estar en la universidad")   
     lb_c.config(bg="#B5B898", fg="black", font=("Helvetica", 18))
@@ -270,10 +295,34 @@ def abrir_toplevel_libre():
     toplevel_hola = Toplevel()
     toplevel_hola.title("libre")
     toplevel_hola.resizable(False, False)
-    toplevel_hola.geometry("700x900")
-    toplevel_hola.config(bg="#C6CB65")
+    toplevel_hola.geometry("750x500")
+    toplevel_hola.config(bg="#B27A76")
 
-    
+    # logo de la app
+    lb_logo2 = Label(toplevel_hola, image=hola, bg="white")
+    lb_logo2.place(x=0,y=150)
+
+
+    lb_c = Label(toplevel_hola, text = "Al menos 224 personas han muerto y cientos han resultado")   
+    lb_c.config(bg="#B27A76", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=20)
+
+    lb_c = Label(toplevel_hola, text = "heridas en Colombia or el terremoto de magnitud 7,4 ")   
+    lb_c.config(bg="#B27A76", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=60)
+
+    lb_c = Label(toplevel_hola, text = "que sacudió el oeste del país el lunes egún las autoridades locales")   
+    lb_c.config(bg="#B27A76", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=100)
+
+    lb_c = Label(toplevel_hola, text = "Los bomberos avanzan en las labores de búsqueda y rescate de los")   
+    lb_c.config(bg="#B27A76", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=100)
+
+    lb_c = Label(toplevel_hola, text = "supervivientes")   
+    lb_c.config(bg="#B27A76", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=100) 
+
 
 #-----------------------------
 # ventana principal de la app
@@ -340,6 +389,16 @@ lb_prueva.place(x=380,y=450)
 proyecto = PhotoImage(file="img/proyecto.png")
 lb_proyecto = Label(frame_entrada, image=proyecto, bg="white")
 lb_proyecto.place(x=550,y=450)
+
+# logo de la app
+hobbi = PhotoImage(file="img/hobbi.png")
+lb_hobbi = Label(frame_entrada, image=hobbi, bg="white")
+lb_hobbi.place(x=20,y=450)
+
+# logo de la app
+hola = PhotoImage(file="img/hola.png")
+lb_hola = Label(frame_entrada, image=hola, bg="white")
+lb_hola.place(x=700,y=450)
 
 # boton para abrir Toplevel para nacimiento
 bt_rty = Button(frame_entrada, text="nacimiento", command=abrir_toplevel_nacimi,)
