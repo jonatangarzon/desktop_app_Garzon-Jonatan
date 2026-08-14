@@ -51,6 +51,10 @@ def abrir_toplevel_medicos():
     toplevel_medi.geometry("700x500")
     toplevel_medi.config(bg="#99B7CB")
 
+    # logo de la app
+    lb_logo2 = Label(toplevel_medi, image=medi, bg="white")
+    lb_logo2.place(x=0,y=200)
+
     # etiqueta para datos medicos
     lb_c = Label(toplevel_medi, text = "tube apendisites el año pasado")   
     lb_c.config(bg="#99B7CB", fg="black", font=("Helvetica", 18))
@@ -201,6 +205,10 @@ def abrir_toplevel_horario():
     toplevel_libres.geometry("700x900")
     toplevel_libres.config(bg="#8DA49B")
 
+    # logo de la app
+    lb_logo2 = Label(toplevel_libres, image=libre, bg="white")
+    lb_logo2.place(x=0,y=200)
+
     lb_c = Label(toplevel_libres, text = "en mi orario de clase de lunes a viernes tengo clases 12:30 a 6:30")   
     lb_c.config(bg="#8DA49B", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=20)
@@ -222,6 +230,10 @@ def abrir_toplevel_pruevas():
     toplevel_2026.geometry("700x900")
     toplevel_2026.config(bg="#CBB843")
 
+    # logo de la app
+    lb_logo2 = Label(toplevel_2026, image=prueva, bg="white")
+    lb_logo2.place(x=0,y=200)
+
     lb_c = Label(toplevel_2026, text = "estudiar")   
     lb_c.config(bg="#CBB843", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=20)
@@ -234,6 +246,23 @@ def abrir_toplevel_proyecto():
     toplevel_proyect.resizable(False, False)
     toplevel_proyect.geometry("700x900")
     toplevel_proyect.config(bg="#B5B898")
+
+# logo de la app
+    lb_logo2 = Label(toplevel_proyect, image=proyecto, bg="white")
+    lb_logo2.place(x=0,y=200)
+
+    lb_c = Label(toplevel_proyect, text = "para el 2031 yo pienso estar en la universidad")   
+    lb_c.config(bg="#B5B898", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=20)
+
+    lb_c = Label(toplevel_proyect, text = "estudiando ingieneria en sistemas")   
+    lb_c.config(bg="#B5B898", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=60)
+
+    lb_c = Label(toplevel_proyect, text = "")   
+    lb_c.config(bg="#B5B898", fg="black", font=("Helvetica", 18))
+    lb_c.place(x=0, y=60)
+
 
     # abrir hola
 def abrir_toplevel_libre():
@@ -278,12 +307,7 @@ lb_logo = Label(frame_entrada, image=logo, bg="white")
 lb_logo.place(x=20,y=170)
 
 # logo de la app
-amigos = PhotoImage(file="img/hello.png")
-lb_amigos = Label(frame_entrada, image=amigos, bg="white")
-lb_amigos.place(x=700,y=170)
-
-# logo de la app
-amigos = PhotoImage(file="img/hello.png")
+amigos = PhotoImage(file="img/amigos.png")
 lb_amigos = Label(frame_entrada, image=amigos, bg="white")
 lb_amigos.place(x=700,y=170)
 
@@ -296,6 +320,26 @@ lb_famili.place(x=380,y=170)
 edu = PhotoImage(file="img/edu.png")
 lb_edu = Label(frame_entrada, image=edu, bg="white")
 lb_edu.place(x=550,y=170)
+
+# logo de la app
+medi = PhotoImage(file="img/medi.png")
+lb_medi = Label(frame_entrada, image=medi, bg="white")
+lb_medi.place(x=190,y=170)
+
+# logo de la app
+libre = PhotoImage(file="img/libre.png")
+lb_libre = Label(frame_entrada, image=libre, bg="white")
+lb_libre.place(x=190,y=450)
+
+# logo de la app
+prueva = PhotoImage(file="img/prueva.png")
+lb_prueva = Label(frame_entrada, image=prueva, bg="white")
+lb_prueva.place(x=380,y=450)
+
+# logo de la app
+proyecto = PhotoImage(file="img/proyecto.png")
+lb_proyecto = Label(frame_entrada, image=proyecto, bg="white")
+lb_proyecto.place(x=550,y=450)
 
 # boton para abrir Toplevel para nacimiento
 bt_rty = Button(frame_entrada, text="nacimiento", command=abrir_toplevel_nacimi,)
@@ -319,23 +363,23 @@ bt_centigrados.place(x=700, y=150, width=115)
 
 # boton para abrir Toplevel para habbies
 bt_centigrados = Button(frame_entrada, text="habbies", command=abrir_toplevel_hobbies)
-bt_centigrados.place(x=20, y=600, width=115)
+bt_centigrados.place(x=20, y=450, width=115)
 
 # boton para abrir Toplevel para horario
 bt_centigrados = Button(frame_entrada, text="horario", command=abrir_toplevel_horario)
-bt_centigrados.place(x=190, y=600, width=115)
+bt_centigrados.place(x=190, y=450, width=115)
 
 # boton para abrir Toplevel para pruevas
 bt_centigrados = Button(frame_entrada, text="pruevas", command=abrir_toplevel_pruevas)
-bt_centigrados.place(x=380, y=600, width=115)
+bt_centigrados.place(x=380, y=450, width=115)
 
 # boton para abrir Toplevel para proyecto
 bt_centigrados = Button(frame_entrada, text="proyecto", command=abrir_toplevel_proyecto)
-bt_centigrados.place(x=550, y=600, width=115)
+bt_centigrados.place(x=550, y=450, width=115)
 
 # boton para abrir Toplevel para libre
 bt_centigrados = Button(frame_entrada, text="libre", command=abrir_toplevel_libre)
-bt_centigrados.place(x=700, y=600, width=115)
+bt_centigrados.place(x=700, y=450, width=115)
 
 # se ejecuta el metodo mainloop() de la clase Tk() a través de la instancia ventana_principal. Este metodo despliega la ventana en pantalla y queda a la espera de lo que el usuario haga (click en un boton, escribir, etc).  Cada acción del usuario se conoce como un evento.  El método mainloop() es un bucle infinito.
 ventana_principal.mainloop()
