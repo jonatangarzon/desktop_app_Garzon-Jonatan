@@ -94,7 +94,7 @@ def abrir_toplevel_familia():
     lb_c.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=40)
     
-    lb_d = Label(toplevel_famili, text = "escojio la especialidad que escojio electrponica")
+    lb_d = Label(toplevel_famili, text = "escojio la especialidad de electronica")
     lb_d.config(bg="#73C9F1", fg="black", font=("Helvetica", 18))
     lb_d.place(x=0, y=80)
     
