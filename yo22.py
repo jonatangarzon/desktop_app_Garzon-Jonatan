@@ -246,7 +246,7 @@ def abrir_toplevel_horario():
 def abrir_toplevel_pruevas():
     global toplevel_2026
     toplevel_2026 = Toplevel()
-    toplevel_2026.title("pruevas")
+    toplevel_2026.title("pruebas")
     toplevel_2026.resizable(False, False)
     toplevel_2026.geometry("700x500")
     toplevel_2026.config(bg="#CBB843")
@@ -259,7 +259,7 @@ def abrir_toplevel_pruevas():
     lb_c.config(bg="#CBB843", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=20)
 
-    lb_c = Label(toplevel_2026, text = "y pasar el año para 11")   
+    lb_c = Label(toplevel_2026, text = "y pasar el año para entrar a 11")   
     lb_c.config(bg="#CBB843", fg="black", font=("Helvetica", 18))
     lb_c.place(x=0, y=60)
 
